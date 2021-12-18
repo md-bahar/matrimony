@@ -1,0 +1,46 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>My Matches</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col size-xs="12" size-md="6">
+                <ion-label class="alicebluecolor" text-center>{{profilePending}} Profiles pending with me
+                    <ion-button shape="round" fill="outline" class="buttonclass">{{profilePending}}</ion-button>
+                </ion-label>
+                <ion-slides [options]="slideOpts" #slider>
+                    <ion-slide *ngFor="let data of cards?.Data;let i = index">
+                        <ion-card>
+                            <ion-img [src]="data.img"></ion-img>
+                            <ion-card-content class="ion-no-padding">
+                                <ion-list lines="none" class="ion-no-padding">
+                                    <ion-item>
+                                        <ion-label class="font500">{{data.name}}</ion-label>
+                                    </ion-item>
+                                    <ion-item>
+                                        <ion-label class="mrgntop" text-wrap>{{data.age}}{{data.height}} {{data.language}}{{data.cast}}{{data.education}}{{data.ocupation}}{{data.palce}}{{data.state}}
+                                        </ion-label>
+                                    </ion-item>
+                                </ion-list>
+                                <ion-buttons class="ion-padding">
+                                    <ion-button shape="round" color="primary" (click)="gotoProfile(i)" fill="solid">Yes</ion-button>
+
+                                    <ion-button shape="round" color="primary" fill="outline">No</ion-button>
+                                </ion-buttons>
+                            </ion-card-content>
+                        </ion-card>
+                    </ion-slide>
+                </ion-slides>
+
+            </ion-col>
+
+        </ion-row>
+        <ion-button (click)="gotoRecommendations()">Daily recommendations</ion-button>
+    </ion-grid>
+
+
+    <!-- <tinder-ui [cards]="cards" (choiceMade)="logChoice($event)"></tinder-ui> -->
+</ion-content>

@@ -1,0 +1,52 @@
+ion-buttons {
+    float: right;
+    ion-button {
+        width: 40% !important;
+    }
+}
+
+ion-header {
+    ion-toolbar {
+        //height: 42px;
+        --background: #48b783;
+    }
+}
+
+ion-content {
+    height: 50%;
+    --background: linear-gradient(0deg, #fff 50%, #48b783 50%);
+    //--background: url('../../../assets/images/matrimony3.png');
+}
+
+ion-card {
+    display: inline-block;
+    background: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+    position: absolute;
+    will-change: transform;
+    transition: all 0.3s ease-in-out;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: grab;
+    ion-row {
+        ion-col {
+            ion-icon {
+                margin: 7%;
+            }
+            ion-label {
+                padding-right: 5px;
+            }
+            ion-buttons {
+                width: 75%;
+                ion-button {
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
+
+img {
+    height: 250px;
+}

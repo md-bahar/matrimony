@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Daily Recommendations</ion-title>
+        <ion-buttons slot="start">
+            <ion-back-button mode="md" class="ion-align-self-center" color="light"></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+    <ion-card #tinderCard *ngFor="let profile of dataArray;let i = index" [ngStyle]="{ zIndex: dataArray.length - i, transform: 'scale(' + (20 - i) / 20 + ') translateY(-' + 20 * i + 'px)' }">
+        <ion-img #tinderCardImage [src]="profile.img" (load)="tinderCardImage.style.opacity = 1"></ion-img>
+        <ion-card-content class="ion-no-padding">
+            <ion-list lines="none" class="ion-no-padding">
+                <ion-item>
+                    <ion-label class="font500">{{profile.name}}</ion-label>
+                </ion-item>
+                <ion-item>
+                    <ion-label class="mrgntop" text-wrap>{{profile.age}}{{profile.height}} {{profile.language}}{{profile.cast}}{{profile.education}}{{profile.ocupation}}{{profile.palce}}{{profile.state}}</ion-label>
+                </ion-item>
+            </ion-list>
+            <ion-row>
+                <ion-col size="12">
+                    <ion-icon name="star-outline" color="primary" text-center (click)="userClickedButton($event,'Short',i)"></ion-icon>
+                    <ion-buttons class="ion-padding">
+                        <ion-label class="nowrap font500"> Liked her?</ion-label>
+                        <ion-button color="primary" shape="round" fill="solid" (click)="userClickedButton($event,'Yes',i)">Yes</ion-button>
+
+                        <ion-button color="primary" shape="round" fill="outline" (click)="userClickedButton($event,'No',i)">No</ion-button>
+                    </ion-buttons>
+                </ion-col>
+            </ion-row>
+
+        </ion-card-content>
+
+    </ion-card>
+
+    <!-- <tinder-ui [cards]="cards" (choiceMade)="logChoice($event)"></tinder-ui> -->
+</ion-content>

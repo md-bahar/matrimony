@@ -1,0 +1,36 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>{{routerParams.profile.id}}</ion-title>
+        <ion-buttons slot="start">
+            <ion-back-button mode="md" class="ion-align-self-center" color="light"></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+    <ion-grid>
+        <ion-row>
+            <ion-slides [options]="slideOpts" #slider pager>
+                <ion-slide *ngFor="let img of routerParams?.image">
+                    <ion-img [src]="img.img"> </ion-img>
+                </ion-slide>
+
+            </ion-slides>
+            <ion-card class="ion-no-padding no-margin">
+                <ion-card-content class="ion-no-padding">
+                    <ion-list lines="none" class="ion-no-padding">
+                        <ion-item>
+                            <ion-label class="font500">{{routerParams.profile.name}}</ion-label>
+                        </ion-item>
+                        <ion-item>
+                            <ion-label class="mrgntop" text-wrap>{{routerParams.profile.age}}{{routerParams.profile.height}} {{routerParams.profile.language}}{{routerParams.profile.cast}}{{routerParams.profile.education}}{{routerParams.profile.ocupation}}{{routerParams.profile.palce}}{{routerParams.profile.state}}</ion-label>
+                        </ion-item>
+                    </ion-list>
+                </ion-card-content>
+            </ion-card>
+        </ion-row>
+
+    </ion-grid>
+</ion-content>

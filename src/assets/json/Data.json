@@ -1,0 +1,43 @@
+{
+    "Data": [{
+            "id": "M0001",
+            "name": "Anu",
+            "age": "27 Yrs, ",
+            "height": "5ft in, ",
+            "language": "Tamil, ",
+            "case": "Nair, ",
+            "education": "MBBS, ",
+            "ocupation": "Doctor, ",
+            "place": "Chennai, ",
+            "state": "Tamil Nadu, ",
+            "img": "../assets/images/matrimony1.png"
+
+        },
+        {
+            "id": "M0001",
+            "name": "Aruna",
+            "age": "25 Yrs",
+            "height": "5ft in",
+            "language": "Tamil",
+            "case": "Gounder",
+            "education": "MBA",
+            "ocupation": "HR",
+            "place": "Chennai",
+            "state": "Tamil Nadu",
+            "img": "../assets/images/matrimony2.png"
+        },
+        {
+            "id": "M0001",
+            "name": "Nisha",
+            "age": "29 Yrs",
+            "height": "5ft in",
+            "language": "Tamil",
+            "case": "Labbai",
+            "education": "MBBS",
+            "ocupation": "Doctor",
+            "place": "Chennai",
+            "state": "Tamil Nadu",
+            "img": "../assets/images/matrimony4.png"
+        }
+    ]
+}

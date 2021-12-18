@@ -1,0 +1,21 @@
+ion-back-button {
+    color: var(--ion-color-white);
+}
+
+ion-header {
+    ion-toolbar {
+        //height: 42px;
+        --background: #48b783;
+    }
+}
+
+ion-card {
+    z-index: 1;
+    margin-top: -20px;
+}
+
+ion-content {
+    height: 100%;
+    --background: linear-gradient(5deg, #fff 5%, #48b783 100%);
+    //--background: url('../../../assets/images/matrimony3.png');
+}

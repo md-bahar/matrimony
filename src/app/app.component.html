@@ -1,0 +1,51 @@
+<ion-app>
+    <!-- <ion-header>
+        <ion-toolbar>
+            <ion-title>My Matches</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+        <ion-grid>
+            <ion-row>
+                <ion-col size-xs="12" size-md="6">
+                    <ion-label class="alicebluecolor" text-center>8 Profiles pending with me
+                        <ion-button shape="round" fill="outline" class="buttonclass">8 new</ion-button>
+                    </ion-label>
+                    <ion-slides [options]="slideOpts" #slider slidesPerView="1.1">
+                        <ion-slide *ngFor="let img of images">
+                            <ion-card>
+                                <ion-img [src]="img.matrimony" height="80%"></ion-img>
+                                <ion-card-content class="bpBody ion-no-padding">
+                                    <ion-list lines="none" class="ion-no-padding">
+                                        <ion-item>
+                                            <ion-label class="font500">Prinayk</ion-label>
+                                        </ion-item>
+                                        <ion-item>
+                                            <ion-label class="mrgntop" text-wrap>27 yrs, 5ft in, Tamil, Nair, MBBS, Doctor, Chennai, Tamil Nadu</ion-label>
+                                        </ion-item>
+                                    </ion-list>
+                                    <ion-buttons class="ion-padding">
+                                        <ion-button shape="round" (click)="gotoProfile()" fill="solid">Yes</ion-button>
+
+                                        <ion-button shape="round" fill="outline">No</ion-button>
+                                    </ion-buttons>
+                                </ion-card-content>
+                            </ion-card>
+
+                        </ion-slide>
+
+                    </ion-slides>
+
+                </ion-col>
+
+            </ion-row>
+
+        </ion-grid>
+
+
+         <tinder-ui [cards]="cards" (choiceMade)="logChoice($event)"></tinder-ui> 
+    </ion-content> -->
+
+    <ion-router-outlet></ion-router-outlet>
+</ion-app>

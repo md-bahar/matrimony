@@ -1,0 +1,46 @@
+ion-card {
+    border-radius: 10px;
+    ion-img {
+        margin-bottom: 5px;
+        z-index: 0;
+    }
+    ion-label {
+        font-size: 0.8rem;
+        color: var(--ion-color-darkGrey);
+    }
+}
+
+ion-grid {
+    text-align: center;
+}
+
+ion-slide {
+    height: auto;
+    /* slider height you want */
+}
+
+.slider-slide {
+    color: #000;
+    background-color: #fff;
+    height: 50%;
+}
+
+ion-buttons {
+    ion-button {
+        width: 30%;
+    }
+}
+
+.slider-slide {
+    color: #000;
+    background-color: #fff;
+    height: 50%;
+}
+
+.buttonclass {
+    width: 15% !important;
+    height: 5% !important;
+    margin-top: 0px;
+    --border-color: aliceblue;
+    color: aliceblue;
+}
